@@ -70,6 +70,7 @@ a {
 .menu h1 {
     font-size: 2.7rem;
     color: var(--primary-color);
+    letter-spacing: -0.18em;
 }
 
 .menu h1 a {
