@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary-color: #b3b3b3;
+    --gap: 3rem;
+    --light-gray-color: #c7c7c7cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    color: #999;
+    background: #f8f8f8;
+    padding: 10;
+    margin: 0;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom:1px solid var(--light-gray-color);
+    z-index: 1;
+}
+
+.main-content {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3rem; 
+    padding-right: 3rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu h1 {
+    font-size: 2.7rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a {
+    color: inherit
+}
+
+.menu ul li a{
+    display: block;
+    color: var(--primary-color);
+    font-weight: 400;
+    padding: 2rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    background-color: rgb(147, 209, 224);
+    width: 0;
+    height: 0.2rem;
+    transition: all 250ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu-spacing {
+    height: 7rem;
+}
